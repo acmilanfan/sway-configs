@@ -1,0 +1,3 @@
+rofi.modi:	run,drun,window,ssh
+#rofi.theme:     ~/.local/share/rofi/themes/android_notification.rasi
+rofi.theme:     ~/.local/share/rofi/themes/purple.rasi
