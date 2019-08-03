@@ -313,4 +313,11 @@ exec mako --anchor top-right
 # Autohide mouse pointer after
 seat * hide_cursor 4000
 
+# Gnome customAdwaita-dark
+set $gnome-schema org.gnome.desktop.interface
+
+exec_always {
+    gsettings set $gnome-schema gtk-theme 'Adwaita-dark'
+}
+
 include /etc/sway/config.d/*
