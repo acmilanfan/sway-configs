@@ -1,7 +1,7 @@
 {
     "layer": "top", // Waybar at top layer
     "output": "eDP-1",
-    "height": 25,
+    "height": 30,
     "modules-left": ["sway/workspaces", "sway/mode",  "custom/media"],
     "modules-center": ["sway/window"],
     "modules-right": ["mpd", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "battery", "clock", "tray"],
@@ -130,7 +130,10 @@
             "spotify": "",
             "default": "🎜"
         },
-	"on-click": "playerctl pause",
+	"on-click": "playerctl play",
+	"on-click-right": "playerctl pause",
+	"on-scroll-up": "playerctl previous",
+	"on-scroll-down": "playerctl next",
         "escape": true,
          "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
     },
